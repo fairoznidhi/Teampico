@@ -120,10 +120,10 @@ header .btn-outline-danger:active{
     color: #2F2F2F;
 }
 /* for all end*/
-.what-we-do:hover .alls span::before,.our-projects:hover .alls span::before,.about-us:hover .alls span::before,.testimonial:hover .alls span::before,.plans:hover .alls span::before{
+.what-we-do:hover .alls span::before,.our-projects:hover .alls span::before,.about-us:hover .alls span::before,.testimonial:hover .alls span::before,.plans:hover .alls span::before,.recent-posts:hover .alls span::before{
     height: 20px;
 }
-.what-we-do:hover .alls span::after,.our-projects:hover .alls span::after,.about-us:hover .alls span::after,.testimonial:hover .alls span::after,.plans:hover .alls span::after{
+.what-we-do:hover .alls span::after,.our-projects:hover .alls span::after,.about-us:hover .alls span::after,.testimonial:hover .alls span::after,.plans:hover .alls span::after,.recent-posts:hover .alls span::after{
     height: 20px;
 }
 .boxx{
@@ -745,6 +745,7 @@ color: #fff;
     padding-top: 40px;
 }
 .swiper-slide{
+    
     box-shadow: 0px 2px 0.6rem -6px;
     padding: 25px 20px;
     background-color: #FAFAFA;
@@ -879,3 +880,46 @@ section.pricing {
   }
   
 /* pricing */
+.font{
+    padding-bottom: 20px;
+    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+}
+.font-write{
+    padding-left: 20px;
+}
+.font-write h4{
+  
+padding-top: 20px;
+  
+font-family: 'MetropolisRegular';
+  
+font-weight: 700;
+  
+font-size: 20px;
+}
+.font-write p{
+
+font-size: 14px;
+
+font-family: 'MetropolisRegular';
+}
+.font-write a{
+
+/* border-bottom: none; */
+
+text-decoration: none;
+
+font-family: 'MetropolisRegular';
+
+color: #EB3A4C;
+
+font-size: 14px;
+
+font-weight: 700;
+
+padding-bottom: -14px;
+}
+.splide ul{
+    height: 80vh;
+    align-items: center;
+}

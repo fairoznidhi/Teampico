@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/splide.min.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -76,7 +77,7 @@
 
     <!-- what we do start -->
 
-    <section class="what-we-do py-5">
+    <section class="what-we-do pb-5">
       <div class="container py-5 what-we m-auto" id="what-we-do-">
         <div class="row">
           <div class="col-md-12 alls m-auto">
@@ -171,7 +172,7 @@
     <!-- what we do end -->
 
     <!-- our projects start -->
-    <section class="our-projects py-5">
+    <section class="our-projects pb-5">
       <div class="container py-5 m-auto" id="our-projects-">
         <div class="row ">
           <div class="col-md-12 alls m-auto">
@@ -270,7 +271,7 @@
 
     <!-- about us start -->
 
-    <section class="about-us py-5">
+    <section class="about-us pb-5">
       <div class="container py-5" id="about-us-">
         <div class="row">
           <div class="col-md-10 m-auto"> <!--change-->
@@ -384,7 +385,7 @@
     <!-- offers start -->
 
     <section class="offers py-5">
-      <div class="container py-3">
+      <div class="container py-2">
         <div class="row">
           <div class="col-md-10 m-auto"> <!--change-->
             <div class="row">
@@ -414,7 +415,7 @@
 
     <!-- testimonial part start -->
 
-    <section class="testimonial py-5 py-5">
+    <section class="testimonial pb-5">
       <div class="container py-5">
         <div class="row">
           <div class="col-md-12 alls m-auto">
@@ -576,7 +577,7 @@
     <!-- choose your plan start -->
 
     <section class="plans py-5">
-      <div class="container py-5">
+      <div class="container pb-4">
         <div class="row">
           <div class="col-md-12 alls m-auto">
             <span></span>
@@ -589,7 +590,7 @@
         <div class="row">
           <div class="col-md-10 m-auto">
             <div class="pricing py-5">
-              <div class="container pt=4">
+              <div class="container">
                 <div class="row">
                   <!-- Free Tier -->
                   <div class="col-lg-4">
@@ -684,7 +685,56 @@
       </div>
     </section>
 
+    <section class="recent-posts py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 alls m-auto pb-5">
+            <span></span>
+              <h1>Recent Posts</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum nisi ipsam sed. Numquam quasi repudiandae laudantium exercitationem sint ullam minus!</p>
+          </div>
+        </div>
+      </div>
 
+      <!-- splide -->
+      <div class="splide">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide">
+              <div class="font">
+                <img src="images/pexels-lukas-1.png" alt="">
+                <div class="font-write">
+                  <h4>Top 10 Fonts</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, cum!</p>
+                <a href="">Read More</a>
+                </div>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="font">
+                <img src="images/pexels-lukas-296115.png" alt="">
+                <div class="font-write">
+                  <h4>Top 10 Fonts</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, cum!</p>
+                <a href="">Read More</a>
+                </div>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="font">
+                <img src="images/pexels-lukas-2.png" alt="">
+                <div class="font-write">
+                  <h4>Top 10 Fonts</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, cum!</p>
+                <a href="">Read More</a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- splide -->
+    </section>
     
     <!-- jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -774,5 +824,17 @@
 
 
   </script>
+
+  <script src="js/splide.min.js"></script>
+  <script>
+    new Splide( '.splide', {
+	type     : 'loop',
+	autoWidth: true,
+	focus    : 'center',
+  pagination:false,
+  gap: "3em",
+} ).mount();
+  </script>
+
   </body>
 </html>
