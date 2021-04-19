@@ -637,7 +637,12 @@ color: #fff;
 	}
 
 	
-
+    .swiper-slide.swiper-slide{
+        transition: .4s all ease-in-out;
+    }
+    .swiper-slide.swiper-slide:hover{
+        background-color: #EB3A4C;
+    }
 
 		
 
@@ -723,7 +728,15 @@ color: #fff;
     font-size: 16px;
     color: #2F2F2F;
     font-weight: 600;
+    transition: .4s all ease-in-out;
     
+}
+.review1{
+    transition: .4s all ease-in-out;
+}
+.swiper-slide.swiper-slide:hover .client h2,
+.swiper-slide.swiper-slide:hover .review1 p{
+    color: #fff;
 }
 
 
@@ -739,6 +752,10 @@ color: #fff;
     top: 0px;
     border: 3px solid #EB3A4C;
     margin-bottom: 10px;
+    transition: .4s all ease-in-out;
+}
+.swiper-slide.swiper-slide:hover .review1 span::after{
+    border-color: #fff;
 }
 .review1 p{
     padding-top: 40px;

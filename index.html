@@ -310,25 +310,25 @@
             <div class="row">
               <div class="col-md-3 cc">
                 <div class="round">
-                  <h4>375+</h4>
+                  <h4><span class="counter">375</span>+</h4>
                 <h4>Clients</h4>
                 </div>
               </div>
               <div class="col-md-3 cc">
                 <div class="round">
-                  <h4>733+</h4>
+                  <h4><span class="counter">733</span>+</h4>
                 <h4>Projects</h4>
                 </div>
               </div>
               <div class="col-md-3 cc">
                 <div class="round">
-                  <h4>300+</h4>
+                  <h4><span class="counter">300</span>+</h4>
                 <h4>Reviews</h4>
                 </div>
               </div>
               <div class="col-md-3 cc">
                 <div class="round">
-                  <h4>600+</h4>
+                  <h4><span class="counter">600</span>+</h4>
                 <h4>Likes</h4>
                 </div>
               </div>
@@ -904,18 +904,17 @@
 
 
   </script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+<script src="js/jquery.counterup.min.js"></script>
 
-  <script src="js/splide.min.js"></script>
-  <script>
-    new Splide( '.splide', {
-      perPage: 4,
-	type     : 'loop',
-	autoWidth: true,
-	focus    : 'center',
-  pagination:false,
-  gap: "3em",
-} ).mount();
-  </script>
+<script>
+  $('.counter').counterUp({
+    delay: 10,
+    time: 1200,
+    offset: 50,
+});
 
+
+</script>
   </body>
 </html>
