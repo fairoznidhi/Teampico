@@ -1,0 +1,290 @@
+@media (max-width: 1199.98px){ 
+    header h1 {
+        font-size: 60px;
+    }
+    .offers h4, footer h4 {
+        font-size: 22px;
+    }
+    .footer-offer p {
+        font-size: 16px;
+    }
+    .footer-offer form input {
+        font-size: 16px;
+    }
+    .footer-offer form textarea {
+        font-size: 16px;
+    }
+    .lunchbox  {
+        padding-left:20em; /*changed padding-left: 2em;*/
+    }
+    .swiper-wrapper {
+        /* just enough width so slides handing off screen are partially visible */
+        width: 100%;
+    }
+    .swiper-slide.swiper-slide  {
+        /* and finally the 4 column layout */
+        width: 50%;
+        /* centeredSlides set to true */
+        /* reposition so first slide appears on left */
+            transform: translateX(-00%);
+    }
+    .swiper-button-prev {
+        /* show on larger viewports */
+        left: 15%;
+        font-size: 35px;
+    }
+    .swiper-button-next {
+        /* hide on small viewports */
+        left: 15%;
+        font-size: 35px;
+    }
+}
+@media (max-width: 1024px){ 
+    .lunchbox  {
+        padding-left: 14em; /*changed padding-left: 2em;*/
+    }
+    .swiper-wrapper {
+        /* just enough width so slides handing off screen are partially visible */
+        width: 100%;
+    }
+    .swiper-slide.swiper-slide  {
+        /* and finally the 4 column layout */
+        width: 50%;
+        /* centeredSlides set to true */
+        /* reposition so first slide appears on left */
+            transform: translateX(-00%);
+    }
+    .swiper-button-prev {
+        /* show on larger viewports */
+        left: 10%;
+        font-size: 30px;
+    }
+    .swiper-button-next {
+        /* hide on small viewports */
+        left: 10%;
+        font-size: 30px;
+    }
+}
+@media (max-width: 991.98px) {
+    .offers h4, footer h4 {
+        font-size: 20px;
+    }
+    .footer-offer p {
+        font-size: 15px;
+    }
+    .footer-offer form input {
+        font-size: 15px;
+    }
+    .footer-offer form textarea {
+        font-size: 15px;
+    }
+}
+@media (max-width: 768px) {
+    html,body{
+        overflow-x: hidden;
+    }
+    header h1 {
+        font-size: 48px;
+    }
+    header p {
+        font-size: 16px;
+    }
+    header .btn-outline-danger {
+        margin-bottom: 7px;
+    }
+    .hg {
+        height: 64vh;
+        padding-left: 11%;
+    }
+    header .btn-outline-danger {
+        width: 136px;
+        padding: 11px 16px;
+        font-size: 12px;
+    }
+    .alls {
+        width: 66%;
+    }
+    .p-span {
+        font-size: 13px;
+    }
+    .img-layer-p h2 {
+        font-size: 18px;
+    }
+    .img-layer-p h4 {
+        top: 40%;
+        font-size: 12px;
+    }
+    .usss h3{
+        font-size: 22px;
+    }
+    .usss p{
+        font-size: 12px;
+    }
+    footer{
+        background-size: cover;
+        height: 100vh;
+    }
+
+    .offers h4, footer h4 {
+        font-size: 18px;
+    }
+    .footer-offer p {
+        font-size: 14px;
+    }
+    .footer-offer form input {
+        font-size: 14px;
+    }
+    .footer-offer form textarea {
+        font-size: 14px;
+    }
+    .lunchbox  {
+        padding-left: 8em; /*changed padding-left: 2em;*/
+    }
+    .swiper-wrapper {
+        /* just enough width so slides handing off screen are partially visible */
+        width: 100%;
+    }
+    .swiper-slide.swiper-slide  {
+        /* and finally the 4 column layout */
+        width: 100%;
+        /* centeredSlides set to true */
+        /* reposition so first slide appears on left */
+            transform: translateX(-00%);
+    }
+    .swiper-button-prev {
+        /* show on larger viewports */
+        left: 8%;
+        font-size: 30px;
+    }
+    .swiper-button-next {
+        /* hide on small viewports */
+        left: 8%;
+        font-size: 30px;
+    }
+
+}
+@media (max-width: 575.98px) {
+    header h1 {
+        font-size: 44px;
+    }
+    header p {
+        font-size: 14px;
+    }
+    header .btn-outline-danger {
+        margin-bottom: 7px;
+    }
+    .hg {
+        height: 62vh;
+        padding-left: 8%;
+    }
+    header .btn-outline-danger {
+        width: 128px;
+        padding: 10px 15px;
+        font-size: 11px;
+    }
+    .alls {
+        width: 95%;
+    }
+    .p-span {
+        font-size: 11px;
+    }
+    .img-layer-p h2 {
+        font-size: 16px;
+    }
+    .img-layer-p h4 {
+        top: 35%;
+        font-size: 11px;
+        transform: translateX(-50%);
+    }
+    .cc::before {
+        height: 70px;
+        width: 70px;
+    }
+    .round h4 {
+        font-size: 13px;
+    }
+    .lunchbox  {
+        padding-left: 1em; /*changed padding-left: 2em;*/
+    }
+    .swiper-wrapper {
+        /* just enough width so slides handing off screen are partially visible */
+        width: 100%;
+    }
+    .swiper-slide.swiper-slide  {
+        /* and finally the 4 column layout */
+        width: 100%;
+        /* centeredSlides set to true */
+        /* reposition so first slide appears on left */
+            transform: translateX(-00%);
+    }
+    .swiper-button-prev {
+        /* show on larger viewports */
+        
+        top: 90%;
+        left: 40%;
+        font-size: 30px;
+    }
+    .swiper-button-next {
+        /* hide on small viewports */
+        top: 90%;
+        left: 55%;
+        font-size: 30px;
+    }
+}
+@media (max-width: 600px){
+    .owl-carousel .owl-item.big .boxp {
+        background: #EB3A4C !important;
+        opacity: 1;
+        height: 51.5vh;
+        width: 290px;
+        border-radius: 12%;
+        cursor: auto;
+    }
+    .boxx{
+        position: relative;
+    }
+    .owl-carousel .owl-nav button.owl-next{
+        position: absolute;
+        top: 50%;
+        right: 4%;
+        font-size: 30px;
+        transform: translateY(-50%);
+        color: #C0C0C0;
+    }
+    .owl-carousel .owl-nav button.owl-prev{
+        position: absolute;
+        top: 50%;
+        left: 4%;
+        font-size: 30px;
+        transform: translateY(-50%);
+        color: #C0C0C0;
+    }
+    .offers h4, footer h4 {
+        font-size: 16px;
+    }
+    .footer-offer p {
+        font-size: 12px;
+    }
+    .footer-offer form input {
+        font-size: 12px;
+    }
+    .footer-offer form textarea {
+        font-size: 12px;
+    }
+}
+@media (max-width: 360px){
+    .owl-carousel .owl-nav button.owl-next{
+        right: 1%;
+    }
+    .owl-carousel .owl-nav button.owl-prev{
+        top: 50%;
+        left: 1%;
+    }
+}
+@media (max-width: 480px){
+    .recents-all{
+        width: 90%;
+    }
+}
+
+

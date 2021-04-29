@@ -449,8 +449,13 @@ color: #fff;
     background-size: cover;
     height: 300px;
 }
+.xyz{
+    display: flex;
+    justify-content: space-between;
+}
 .cc{
     height: 300px;
+    width: 25%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -565,42 +570,6 @@ color: #fff;
     border-color: #EB3A4C;
 }
 
-
-/* .testimonial .swiper-container{
-    position:static !important;
-}
-.testimonial .swiper-button-next,.testimonial .swiper-button-prev{
-    position:static !important;
-}  */
-/* .testimonial{
-    position: relative;
-}
- .testimonial .swiper-container {
-    margin-left: 334px;
-} 
-.testimonial .swiper-slide{
-    background-color: aquamarine;
-}
-.testimonial .swiper-button-next{
-    background-color: #2F2F2F;
-    position: absolute;
-    height: 100px;
-    width: 100px;
-    left: 0px;
-    top: 0px;
-    background-color: aqua;
-}
-.testimonial .swiper-button-prev{
-    background-color: #2F2F2F;
-    position: absolute;
-    height: 100px;
-    width: 100px;
-    left: 200px;
-    top: 0px;
-    background-color: red;
-} */
-/* relocating nav button */
-
 /* ==========================================================================
    lunchbox container
  ========================================================================== */
@@ -627,88 +596,59 @@ color: #fff;
     padding-top: 10px;
     padding-bottom: 10px;
 }
+.swiper-wrapper {
+	/* now pagination is below slides */
+	margin-bottom: 3em;
+	/* just enough width so slides handing off screen are partially visible */
+	width: 65%;
+}
+.swiper-slide.swiper-slide{
+    transition: .4s all ease-in-out;
+}
+.swiper-slide.swiper-slide:hover{
+    background-color: #EB3A4C;
+}
+.swiper-slide.swiper-slide  {
+    /* and finally the 4 column layout */
+    width: 70%;
+    /* centeredSlides set to true */
+    /* reposition so first slide appears on left */
+    transform: translateX(-50%);
+}
+.swiper-pagination {
+	/* show on small viewports */
+	display: block;
+}
+.swiper-pagination {
+    /* hide on larger viewports per stakeholder recommendation */
+    display: none;
+}
+/* now move prev button more to the left */
+.swiper-button-prev {
+	/* but first hide on small viewports */
+	display: none;
+	left: 23%;
+	top: 34%;
+	margin-top: 0;
+	/* subtract .swiper-wrapper bottom-margin to vertically center arrow */
+}
 
-	.swiper-wrapper {
-		/* now pagination is below slides */
-		margin-bottom: 3em;
-
-		/* just enough width so slides handing off screen are partially visible */
-		width: 65%;
-	}
-
-	
-    .swiper-slide.swiper-slide{
-        transition: .4s all ease-in-out;
-    }
-    .swiper-slide.swiper-slide:hover{
-        background-color: #EB3A4C;
-    }
-
-		
-
-		
-
-		@media (min-width: 53em) {
-			.swiper-slide.swiper-slide  {
-				/* and finally the 4 column layout */
-				width: 70%;
-
-				/* centeredSlides set to true */
-				/* reposition so first slide appears on left */
-				transform: translateX(-50%);
-			}
-		}
-
-		.swiper-pagination {
-			/* show on small viewports */
-			display: block;
-		}
-
-		@media (min-width: 37.5em) {
-			.swiper-pagination {
-				/* hide on larger viewports per stakeholder recommendation */
-				display: none;
-			}
-		}
-
-		/* now move prev button more to the left */
-		.swiper-button-prev {
-			/* but first hide on small viewports */
-			display: none;
-
-			left: 23%;
-			top: 34%;
-
-			margin-top: 0;
-
-			/* subtract .swiper-wrapper bottom-margin to vertically center arrow */
-		}
-
-		@media (min-width: 37.5em) {
-			.swiper-button-prev {
-				/* show on larger viewports */
-				display: block;
-			}
-		}
-
-		.swiper-button-next {
-			/* hide on small viewports */
-			display: none;
-
-			left: 23%;
-			top: 46%;
-
-			margin-top: 0;
-
-			/* subtract .swiper-wrapper bottom-margin to vertically center arrow */
-		}
-
-		@media (min-width: 37.5em) {
-			.swiper-button-next {
-				/* show on larger viewports */
-				display: block;
-			}
-		}
+.swiper-button-prev {
+    /* show on larger viewports */
+    display: block;
+}
+.swiper-button-next {
+	/* hide on small viewports */
+	display: none;
+	left: 23%;
+	top: 46%;
+    margin-top: 0;
+    /* subtract .swiper-wrapper bottom-margin to vertically center arrow */
+}
+.swiper-button-next {
+    /* show on larger viewports */
+    display: block;
+}
 
 .client{
     display: flex;
@@ -735,7 +675,7 @@ color: #fff;
     transition: .4s all ease-in-out;
 }
 .swiper-slide.swiper-slide:hover .client h2,
-.swiper-slide.swiper-slide:hover .review1 p{
+.swiper-slide.swiper-slide:hover .review1 p,.swiper-slide.swiper-slide:hover .review1 .fas{
     color: #fff;
 }
 
@@ -758,7 +698,10 @@ color: #fff;
     border-color: #fff;
 }
 .review1 p{
-    padding-top: 40px;
+    padding-top: 30px;
+}
+.review1 .fas{
+    font-size: 20px;
 }
 .swiper-slide{
     
@@ -866,8 +809,9 @@ section.pricing {
   .card-body{
     position: relative;
 }
+
 .span-price::after{
-  content: "";
+  content: '';
   position: absolute;
   height: 5px;
   width: 91px;
@@ -878,7 +822,7 @@ section.pricing {
   border-radius: 50px;
   transition: all 0.2s;
 }
-  /* Hover Effects on Card */
+ /* Hover Effects on Card */
   
   @media (min-width: 992px) {
     .pricing .card:hover {
@@ -907,12 +851,11 @@ section.pricing {
   }
   
 /* pricing */
-.main-splide{
-    display: flex;
-    justify-content: space-between;
-}
+
 .recents-all{
-    width: 23%;
+    margin: auto;
+    width: 95%;
+    margin-bottom: 30px;
     box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
 }
 .recents-all img{
@@ -968,13 +911,101 @@ padding-bottom: -14px;
 }
 footer{
     background-color: #FAFAFA;
+
+}
+
+.footer-offer-0-p{
     background-image: url(../images/Group\ 336.png);
     background-position: left;
     background-repeat: no-repeat;
-    background-size: 53%;
+    background-size: cover;
     height: 100vh;
 }
+.footer-offer-p{
+    height: 100vh;
+    padding: 0 5%;
+}
+.footer-offer-0-p{
+    position: relative;
+    
+}
+.footer-offer-0{
+    text-align: center;
+    position: absolute;
+    left: 48%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+}
+.footer-offer-0 h4{
+    
+margin-bottom: 40px;
+}
+.footer-offer-0 h5{
 
+padding-top: 40px;
+}
+.footer-offer-0 p{
+
+padding-top: 0px;
+
+padding: 7px 0;
+
+margin-bottom: 0px;
+}
+.names{
+    display: flex;
+    justify-content: space-between;
+}
+.names1{
+    width: 48%
+}
+.footer-offer form input{ 
+    padding-left: 0;
+    background-color: z;
+    border-top: none; 
+    border-right: none; 
+    border-left: none; 
+     border-bottom: 1px solid #EB3A4C; 
+     background-color: #FAFAFA;
+     border-radius: 0px; 
+     font-family: 'MetropolisRegular';
+}
+.footer-offer  form textarea { 
+    padding-left: 0;
+    background-color: #FAFAFA;
+    border-top: none; 
+    border-right: none; 
+    border-left: none; 
+     border-bottom: 1px solid #EB3A4C; 
+     border-radius: 0px; 
+     font-family: 'MetropolisRegular';
+    }
+    .footer-offer form input:focus,.footer-offer textarea:focus{
+    background: transparent;
+    box-shadow: none;
+    caret-color: #9b9b9b;
+    border-color:#9b9b9b;
+    }
+.footer-offer p{
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+    
+}
+.footer-offer-p{
+    background-color: #FAFAFA;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+/* footer{
+    background-color: #FAFAFA;
+    background-image: url(../images/Group\ 336.png);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
 .names{
     display: flex;
     justify-content: space-between;
@@ -1045,4 +1076,4 @@ padding-top: 0px;
 padding: 7px 0;
 
 margin-bottom: 0px;
-}
+} */
