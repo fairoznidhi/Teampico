@@ -906,11 +906,49 @@ padding-bottom: -14px;
     height: 80vh;
     align-items: center;
 }
+.slick-dots {
+    position: absolute;
+    bottom: 20px;
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+}
+.slick-dots li {
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+    padding: 0;
+    cursor: pointer;
+}
+.slick-dots li button:before {
+    font-family: 'slick';
+    font-size: 30px;
+    line-height: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    content: '•';
+    text-align: center;
+    opacity: .25;
+    color: black;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
 .contact-us{
     background-color: #FAFAFA;
 }
+
 footer{
     background-color: #FAFAFA;
+    display: flex;
+    
 
 }
 
@@ -920,6 +958,7 @@ footer{
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
+    width: 50%;
 }
 .footer-offer-p{
     height: 100vh;
@@ -997,6 +1036,8 @@ margin-bottom: 0px;
     display: flex;
     align-items: center;
     height: 100vh;
+    width: 50%;
+
 }
 /* footer{
     background-color: #FAFAFA;

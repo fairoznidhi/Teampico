@@ -38,6 +38,7 @@
         left: 15%;
         font-size: 35px;
     }
+    
 }
 @media (max-width: 1024px){ 
     .lunchbox  {
@@ -161,7 +162,7 @@
         left: 8%;
         font-size: 30px;
     }
-
+    
 }
 @media (max-width: 575.98px) {
     header h1 {
@@ -230,6 +231,18 @@
         left: 55%;
         font-size: 30px;
     }
+    .what-we-do .btn-outline-danger, .our-projects .btn-outline-danger {
+        width: 123px;
+        padding: 10px 19px;
+        font-size: 13px;
+    }
+    .side-button .btn-outline-danger{
+        width: 123px;
+        padding: 10px 19px;
+        font-size: 13px;
+        margin-left: 50%;
+    transform: translateX(-50%);
+    }
 }
 @media (max-width: 600px){
     .owl-carousel .owl-item.big .boxp {
@@ -247,7 +260,7 @@
         position: absolute;
         top: 50%;
         right: 4%;
-        font-size: 30px;
+        font-size: 50px;
         transform: translateY(-50%);
         color: #C0C0C0;
     }
@@ -255,30 +268,44 @@
         position: absolute;
         top: 50%;
         left: 4%;
-        font-size: 30px;
+        font-size: 50px;
         transform: translateY(-50%);
         color: #C0C0C0;
     }
     .offers h4, footer h4 {
-        font-size: 16px;
+        font-size: 22px;
     }
     .footer-offer p {
-        font-size: 12px;
+        font-size: 14px;
     }
     .footer-offer form input {
-        font-size: 12px;
+        font-size: 14px;
     }
     .footer-offer form textarea {
-        font-size: 12px;
+        font-size: 14px;
     }
-}
+    footer{
+        display: block;
+    }
+    .footer-offer-0-p{
+        width: 100%;
+    }
+    .footer-offer-p{
+        width: 100%;
+    }
+    .footer-offer-0 h4 {
+        margin-bottom: 12px;
+    }
+}   
 @media (max-width: 360px){
     .owl-carousel .owl-nav button.owl-next{
         right: 1%;
+        font-size: 40px;
     }
     .owl-carousel .owl-nav button.owl-prev{
         top: 50%;
         left: 1%;
+        font-size: 40px;
     }
 }
 @media (max-width: 480px){

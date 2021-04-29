@@ -720,21 +720,6 @@
         <!-- div -->
         <div class="main-splide1">
           <div class="recents-all">
-            <img src="images/pexels-lukas-2.png"alt="">
-            <div class="font">
-              
-              <div class="font-write">
-                <h4>Top 10 Fonts</h4>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, cum!</p>
-              <a href="">Read More</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- div -->
-        <!-- div -->
-        <div class="main-splide1">
-          <div class="recents-all">
             <img src="images/pexels-lukas-1.png"alt="">
             <div class="font">
               
@@ -815,8 +800,8 @@
 
     <!-- footer start -->
     <footer>
-      <div class="row">
-        <div class="col-sm-12 col-md-6">
+      
+        
           <div class="footer-offer-0-p">
             <div class="footer-offer-0">
               <h4>Contact Details</h4>
@@ -829,9 +814,9 @@
               youroffice@mail.com</p>
             </div>
           </div>
-        </div>
+        
 
-        <div class="col-sm-12 col-md-6">
+        
           <div class="footer-offer-p">
             <div class="footer-offer">
               <h4>Get Amazing Offers</h4>
@@ -858,9 +843,9 @@
               </form>
             </div>
           </div>
-        </div>
+        
 
-      </div>
+      
 
       
     </footer>
@@ -1034,18 +1019,21 @@
       breakpoint: 480,
       settings: {
         slidesToShow:1,
+        dots:true,
       }
     },
     {
       breakpoint: 800,
-      settings: {
+      settings:{ 
         slidesToShow: 2,
+        dots:true,
       }
     },
     {
       breakpoint: 1000,
       settings: {
         slidesToShow:3,
+        dots:true,
       }
     },
   ]
@@ -1068,7 +1056,16 @@
 <script src="js/circle-progress.js"></script>
 <script src="js/wow.min.js"></script>
 <script>
-  new WOW().init();
+  wow = new WOW(
+    {
+      boxClass:     'wow',      // default
+      animateClass: 'animated', // default
+      offset:       0,          // default
+      mobile:       false,       
+      live:         true        // default
+    }
+  )
+wow.init();
 </script>
 <script src="js/css3-animate-it.js"></script>
   </body>
