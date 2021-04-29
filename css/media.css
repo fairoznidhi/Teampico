@@ -81,6 +81,10 @@
     }
 }
 @media (max-width: 768px) {
+    .navbar-light .navbar-nav .nav-item {
+        text-align: center;
+        font-weight: 700;
+    }
     html,body{
         overflow-x: hidden;
     }
