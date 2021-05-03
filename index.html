@@ -802,7 +802,7 @@
     <footer>
       
         
-          <div class="footer-offer-0-p">
+          <div class="footer-offer-0-p hemo">
             <div class="footer-offer-0">
               <h4>Contact Details</h4>
               <h5>Address</h5>
@@ -1050,6 +1050,32 @@
 });
 </script>
 <script src="js/countfect.min.js"></script>
+<script src="js/jquery.ripples-min.js"></script>
+<script>
+  $('.hemo').ripples({
+
+// Image Url
+imageUrl: null,
+
+// The width and height of the WebGL texture to render to. 
+// The larger this value, the smoother the rendering and the slower the ripples will propagate.
+resolution: 256,
+
+// The size (in pixels) of the drop that results by clicking or moving the mouse over the canvas.
+dropRadius: 20,
+
+// Basically the amount of refraction caused by a ripple. 
+// 0 means there is no refraction.
+perturbance: 0.04,
+
+// Whether mouse clicks and mouse movement triggers the effect.
+interactive: true,
+
+// The crossOrigin attribute to use for the affected image. 
+crossOrigin: ''
+
+});
+</script>
 <script src="js/circle-progress.js"></script>
 <script src="js/wow.min.js"></script>
 <script>
@@ -1058,7 +1084,7 @@
       boxClass:     'wow',      // default
       animateClass: 'animated', // default
       offset:       0,          // default
-           
+      mobile:       false,             
       live:         true        // default
     }
   )
