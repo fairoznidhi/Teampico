@@ -79,6 +79,9 @@
     .footer-offer form textarea {
         font-size: 15px;
     }
+    .nav-link{
+        display: inline-block;
+    }
 }
 @media (max-width: 768px) {
     .navbar-light .navbar-nav .nav-item {
@@ -317,5 +320,4 @@
         width: 90%;
     }
 }
-
 
